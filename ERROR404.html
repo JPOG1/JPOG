@@ -1,0 +1,208 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            background-color: blue;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            display: flex;
+        }
+
+        .container {
+            height: 250;
+            width: 500;
+            background-image: radial-gradient(circle, #d439ef, blue);
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            transition: ease-out 2s;
+        }
+
+        .container:hover {
+            box-shadow: 5px 5px 30px #000000;
+        }
+
+        .header {
+            margin-top: 30px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            margin-left: 10px;
+            padding-right: 5px;
+            padding-top: 5px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: small;
+            padding-right: 5px;
+            padding-left: 5pxpx;
+            margin-left: 5px;
+            margin-right: 5px;
+            transition: 1s;
+        }
+
+        a:hover {}
+
+
+        h3 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            font-size: small;
+            font-weight: bolder;
+            margin-top: 0;
+        }
+
+        .log {
+            display: flex;
+            justify-content: flex-end;
+            align-items: baseline;
+            margin-left: 20px;
+        }
+
+        .login {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            width: auto;
+            height: 25px;
+        }
+
+        .signup {
+
+            background-color: rgb(255, 10, 145);
+            border: none;
+            color: white;
+            font-family: Helvetica;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 5px;
+            width: auto;
+            height: 25px;
+        }
+
+        .content {
+            margin-left: 50px;
+        }
+
+        .sub {
+            background-color: rgb(0, 106, 255);
+            border: none;
+            border-radius: 5px;
+            padding: 7px;
+            color: white;
+            font-size: small;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .demo {
+            background-color: transparent;
+            border: solid rgb(0, 106, 255);
+            border-radius: 5px;
+            padding: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: white;
+            font-size: small;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        p {
+            font: monospace;
+            width: 25ch;
+            text-wrap: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(20) infinite alternate-reverse;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0ch;
+            }
+        }
+
+        img {
+            font: monospace;
+            width: 25ch;
+            text-wrap: nowrap;
+            overflow: hidden;
+            position: relative;
+            animation: jumping 2s steps(20) infinite;
+        }
+
+        @keyframes jumping {
+            0% {
+                top: 0;
+            }
+
+            50% {
+                top: -20px;
+            }
+
+            100% {
+                top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="header" style="display: flex;">
+
+            <h3 style="margin-top: 2px;">SlotBox</h3>
+            <nav class="nav">
+                <a s href="">Home</a>
+                <a href="">About us</a>
+                <a href="">Service</a>
+                <a href="">contact</a>
+            </nav>
+            <div class="log" style="display: flex;">
+                <button class="login">login</button>
+                <button class="signup">signup</button>
+            </div>
+        </div>
+        <div class="content"
+            style="display: inline-block;box-sizing: content-box; max-width: 142px; overflow: hidden; margin-right: 10px; padding-right: 20px;">
+            <p style="color:white; font-size: smaller; margin-bottom: 0px;" class="introduction">Introducing new
+                technology</p>
+            <div class="lef" style="display: inline-flexbox;">
+                <h3 style="font-size: larger; margin-top: 5px; margin-bottom: 5px;">Easy <span
+                        style="color: yellow;">Design</span></h3>
+                <h3 style="font-size: larger; padding-bottom: 0; margin-bottom: 0px;"><span
+                        style="color: rgb(0, 106, 255); margin-right: 5px; margin-bottom: none;">Easy</span>Website</h3>
+                <h3 style="font-size: 5px; color: rgb(0, 106, 255); margin-top: 0px; margin-bottom: 20px;">user
+                    interface
+                    is very imporant
+                    these days</h3>
+            </div>
+            <div>
+
+                <button class="sub">Subscribe</button>
+                <button class="demo">Demo</button>
+            </div>
+        </div>
+        <div style=" display: inline-flex;  width:200; text-align: right; padding-right:0;">
+            <img style=" width:150; text-align: right;" src="BackgroundEraser_20250318_112415144.png" alt=""
+                class="image">
+        </div>
+    </div>
+
+</body>
+
+</html>
