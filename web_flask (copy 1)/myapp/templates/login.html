@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-image: url("/img/BackgroundEraser_20240923_142243978-removebg-preview (1).png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+            height: 750px;
+            width: 1300px;/*
+            max-width: 1350px;
+            max-width: 750px;
+            min-width: 100px;
+            min-width: 100px;*/
+
+        }
+        div{
+            width: 400px;
+            height: 400px;
+            display: block;
+            overflow: hidden;
+        }
+        form{
+            height: 400px;
+            width: 400px;
+            background-color: rgba(250, 250, 250, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+        input,
+        button{
+            height: 30px;
+            width: 80%;
+            margin: none;
+            border: none;
+            border-radius: 30px;
+            color: blue;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin-top: 10PX;
+            margin-bottom: 10px;
+        }
+        input :placeholder{color: white; text-align: center;}
+        a{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <form method="POST">
+            <h1>Login</h1>
+            <input type="text" name="username" placeholder="Username" required><br><br>
+            <input type="password" name="password" placeholder="Password" required><br><br>
+            <input type="hidden" name="token" value="{{ token }}">
+            <button type="submit">Login</button>
+            <p>dont have an account? <a>signup</a></p>
+        </form>
+        <form method="POST">
+            <h1>Login</h1>
+            <input type="text" name="username" placeholder="Username" required><br><br>
+            <input type="password" name="password" placeholder="Password" required><br><br>
+            <input type="password" name="confirm_password" placeholder="confirm_password" required><br>
+            <input type="hidden" name="token" value="{{ token }}">
+            <button type="submit">Login</button>
+         <spa>dont have an account? <a href="" id="signup" onclick="">signup</a></p>
+        </form>
+    </div>
+</body>
+<script>
+    const passsword
+    const confirm_password
+</script>
+</html>
